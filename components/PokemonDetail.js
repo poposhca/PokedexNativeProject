@@ -1,8 +1,7 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View } from 'react-native';
 
-const PokemonDetail = ({ route }) => {
-    const { name, detail } = route.params
+const PokemonDetail = ({ name, detail }) => {
     return (
         <View>
             <Text>This is the Pokemon Detail</Text>

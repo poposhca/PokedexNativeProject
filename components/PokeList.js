@@ -14,9 +14,7 @@ const PokeList = ({ navigation }) => {
       <FlatList
         data={pokemons.results}
         renderItem={({ item }) => (
-            <View onTouchEnd={() => navigation.navigate('PokeDetail', { name: item.name, detail: item.url })}>
-                <Pokemon name={item.name} />
-            </View>
+          <Pokemon name={item.name} />
         )}
         keyExtractor={item => item.name}
       />
